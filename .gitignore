@@ -39,3 +39,5 @@
 
 # debug information files
 *.dwo
+
+# C:/msys64/ucrt64/bin/g++.exe src/main.cpp src/dog.cpp src/sheep.cpp src/input.cpp src/ui.cpp src/utils.cpp src/commonFunc.cpp -o out/game.exe -I C:/msys64/ucrt64/include -L C:/msys64/ucrt64/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -mwindows
