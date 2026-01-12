@@ -1,0 +1,16 @@
+#ifndef GAMELOOP_H_
+#define GAMELOOP_H_
+
+#include "commonFunc.h"
+
+extern bool isRunning;
+
+const int FPS = 60;
+const int FRAME_DELAY = 1000 / FPS; 
+
+extern Uint32 frameStart;
+extern int frameTime;
+
+int loop(); 
+
+#endif
