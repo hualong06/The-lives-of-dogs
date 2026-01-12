@@ -7,9 +7,9 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 
-static SDL_Window* gWindow = NULL;
-static SDL_Renderer* gRenderer = NULL;
-static SDL_Event* gEvent;
+extern SDL_Window* gWindow;
+extern SDL_Renderer* gRenderer;
+extern SDL_Event* gEvent;
 
 const int WIDTH_WINDOW = 750;
 const int HEIGHT_WINDOW = 750;
