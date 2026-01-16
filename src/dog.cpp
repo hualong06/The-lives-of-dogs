@@ -3,19 +3,14 @@
 Dog :: Dog() {
     x = 50;
     y = 50;
-    dx = 10;
-    dy = 10;
+    speed = 10;
     width = 10;
     height = 10;
+    radius = 10;
 }
 
 Dog :: ~Dog() {
     // nothing to free yet
-}
-
-void Dog :: setupDxDy(int dx_, int dy_) {
-    dx = dx_;
-    dy = dy_;
 }
 
 void Dog :: move(int vx, int vy) {

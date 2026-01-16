@@ -25,7 +25,7 @@ bool init() {
     return suc;
 }
 
-void clear() {
+void clearWindow() {
     SDL_DestroyRenderer(gRenderer);
     SDL_DestroyWindow(gWindow);
     SDL_Quit();
@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
 
     loop();
 
-    clear();
+    clearWindow();
 
     return 0;
 }
