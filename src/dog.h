@@ -1,3 +1,4 @@
+#pragma once
 #ifndef DOG_H_
 #define DOG_H_
 
@@ -9,6 +10,8 @@ class Dog {
         int width;
         int height;
         int dx, dy;
+        int speed;
+        int radius;
         SDL_Texture* texture;
     public:
         Dog();
@@ -16,10 +19,11 @@ class Dog {
 
         int getX() { return x; }
         int getY() { return y; }
-        void setX(int x_) { x = x_; }
-        void setY(int y_) { y = y_; }
+        int getSpeed() { return speed; }
+        void setSpeed(int speed_) { speed = speed_; }
 
-        void setupDxDy(int dx_, int dy_);
+        void setDx(int dx_) { dx = dx_; }
+        void setDy(int dy_) { dy = dy_; }
         int getDx() { return dx; }
         int getDy() { return dy; }
 
